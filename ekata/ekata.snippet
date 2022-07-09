@@ -1,0 +1,337 @@
+api_version: darwinium.com/api/snippet/v1
+snippets:
+  - name: ekata_account_opening
+    display_name: "Ekata Account Opening API v1.1"
+    scope: model/operation
+    icon: 
+      type: svg+xml
+      href: PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDcuNTcgMTQ3LjkzIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzQwMzg5Mzt9LmNscy0ye2ZpbGw6I2YyNjUyMjt9LmNscy0ze2ZpbGw6I2U1MWIyNDt9LmNscy00e2ZpbGw6IzIzMWYyMDt9LmNscy01e2ZpbGw6I2Y5OWYxYzt9LmNscy02e2ZpbGw6bm9uZTt9PC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTcuNTksMTcuMzhhMi4yNCwyLjI0LDAsMCwxLDIuMjUtMi4yNEg3OS4yYTIuMjUsMi4yNSwwLDAsMSwyLjI1LDIuMjRWMzEuNzZBMi4yNSwyLjI1LDAsMCwxLDc5LjIsMzRINDAuNTVhMi4yNiwyLjI2LDAsMCwwLTIuMjUsMi4yNlY3MS40NmEyLjI0LDIuMjQsMCwwLDAsMi4yMiwyLjJINzkuMTdhMi4yNSwyLjI1LDAsMCwxLDIuMjUsMi4yNVY5MC4yM2EyLjI1LDIuMjUsMCwwLDEtMi4yNSwyLjI1SDE5Ljg0YTIuMjUsMi4yNSwwLDAsMS0yLjI1LTIuMjVaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTcuNTkgLTEzLjU5KSIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTIyMC44Myw1Ny45MmEyMS43NiwyMS43NiwwLDAsMS00Mi42NCwwSDE1OS42NkE0MCw0MCwwLDAsMCwyMTkuMSw4OC41N3YxLjY4YTIuMjYsMi4yNiwwLDAsMCwyLjI1LDIuMjRoMTUuMjhhMi4yNCwyLjI0LDAsMCwwLDIuMTgtMi4yVjU3LjkyWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE3LjU5IC0xMy41OSkiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xNzguMSw0OS42N2EyMS43NiwyMS43NiwwLDAsMSw0Mi43NiwwaDE3Ljk1VjE3LjQ0YTIuMjYsMi4yNiwwLDAsMC0yLjI0LTIuMjZIMjIxLjM1YTIuMjYsMi4yNiwwLDAsMC0yLjI1LDIuMjZ2MS4zM2E0MCw0MCwwLDAsMC01OS40NiwzMC45WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE3LjU5IC0xMy41OSkiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xMzQsNTcuOTJIOTVWOTAuMjNhMi4yNSwyLjI1LDAsMCwwLDIuMjUsMi4yNUgxMTMuN0EyLjI1LDIuMjUsMCwwLDAsMTE2LDkwLjIzVjY4LjQ1YzAtMS4yNC42Ny0xLjQ5LDEuNDgtLjU2bDIwLDIyLjlhNS43NCw1Ljc0LDAsMCwwLDMuNzIsMS42OWgyMWMxLjI0LDAsMS41OS0uNzYuNzYtMS42OVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNy41OSAtMTMuNTkpIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTMzLjg4LDQ5LjY3bDI3Ljc3LTMyLjgyYy44LTEsLjQ0LTEuNzEtLjc5LTEuNzFIMTQwLjM5YTUuNDcsNS40NywwLDAsMC0zLjY3LDEuNzJMMTE3LjM5LDQwYy0uNzgsMS0xLjQ0LjcyLTEuNDQtLjUyVjE3LjM4YTIuMjUsMi4yNSwwLDAsMC0yLjI1LTIuMjRIOTcuMjdBMi4yNCwyLjI0LDAsMCwwLDk1LDE3LjM4VjQ5LjY3WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE3LjU5IC0xMy41OSkiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik00Ny4yNyw0Nkg3MC4xOUEyLjkzLDIuOTMsMCwwLDEsNzMuMTIsNDl2OS42NmEyLjkzLDIuOTMsMCwwLDEtMi45MywyLjkzSDQ3LjI3YTIuOTQsMi45NCwwLDAsMS0yLjk0LTIuOTNWNDlBMi45NCwyLjk0LDAsMCwxLDQ3LjI3LDQ2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTcuNTkgLTEzLjU5KSIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTM2MS40Niw0NS4wOWE4LjcyLDguNzIsMCwxLDEtOC43Miw4LjcyLDguNzIsOC43MiwwLDAsMSw4LjcyLTguNzIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNy41OSAtMTMuNTkpIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMjczLjI0LDU3LjkyVjkwLjIzYTIuMjUsMi4yNSwwLDAsMCwyLjI1LDIuMjVoMTcuMzJhMi4yNiwyLjI2LDAsMCwwLDIuMjYtMi4yNVY1Ny45MloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNy41OSAtMTMuNTkpIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMjUxLjQ5LDM0LjA2SDI3MWEyLjI0LDIuMjQsMCwwLDEsMi4yNCwyLjIzVjQ5LjY3aDIxLjg0VjM2LjM1YTIuMjUsMi4yNSwwLDAsMSwyLjI1LTIuMjRIMzE2LjhhMi4yNSwyLjI1LDAsMCwwLDIuMjUtMi4yNVYxNy40MmEyLjI1LDIuMjUsMCwwLDAtMi4yNS0yLjI1SDI1MS41YTIuMjUsMi4yNSwwLDAsMC0yLjI1LDIuMjVWMzEuOGEyLjI2LDIuMjYsMCwwLDAsMi4yNCwyLjI2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTcuNTkgLTEzLjU5KSIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTM5OC43MywxNS4xOEgzODMuNDVhMi4yNSwyLjI1LDAsMCwwLTIuMjUsMi4yNlYxOC45YTQwLDQwLDAsMCwwLTU5LjU3LDMwLjc3SDM0MC4xYTIxLjc1LDIxLjc1LDAsMSwxLDAsOC4yM0gzMjEuNjRBNDAsNDAsMCwwLDAsMzgxLjIsODguNTV2MS43M2EyLjI0LDIuMjQsMCwwLDAsMi4yNSwyLjI0aDE1LjI4QTIuMjYsMi4yNiwwLDAsMCw0MDEsOTAuMjhWMTcuNDRhMi4yNiwyLjI2LDAsMCwwLTIuMjYtMi4yNiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE3LjU5IC0xMy41OSkiLz48cmVjdCBjbGFzcz0iY2xzLTIiIHg9IjEyOS4xOCIgeT0iOTguOTgiIHdpZHRoPSIyMi4yMiIgaGVpZ2h0PSIzOS45MyIvPjxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTE0OC4xOCwxMzIuNTNhMjUuMzUsMjUuMzUsMCwwLDEsOS43LTIwLDI1LjQsMjUuNCwwLDEsMCwwLDM5LjkzQTI1LjMzLDI1LjMzLDAsMCwxLDE0OC4xOCwxMzIuNTNaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTcuNTkgLTEzLjU5KSIvPjxwYXRoIGNsYXNzPSJjbHMtNCIgZD0iTTE5Ni41NCwxNDguMjZ2LS44MWguMzN2LS4xN0gxOTZ2LjE3aC4zM3YuODFabTEuNjMsMHYtMWgtLjI1bC0uMy42OC0uMy0uNjhoLS4yNXYxaC4xOHYtLjc0bC4yOC42NGguMThsLjI4LS42NHYuNzRaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTcuNTkgLTEzLjU5KSIvPjxwYXRoIGNsYXNzPSJjbHMtNSIgZD0iTTE5OSwxMzIuNTNhMjUuNCwyNS40LDAsMCwxLTQxLjA5LDIwLDI1LjQsMjUuNCwwLDAsMCwwLTM5LjkzLDI1LjQsMjUuNCwwLDAsMSw0MS4wOSwyMFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNy41OSAtMTMuNTkpIi8+PHBhdGggZD0iTTI0Mi42NSwxNDEuMDh2LTEwLjZhNi4yOSw2LjI5LDAsMCwwLTYuNjQtNi43MSw2LjU4LDYuNTgsMCwwLDAtNS45NCwzLDYuMTksNi4xOSwwLDAsMC01LjU4LTMsNS41Nyw1LjU3LDAsMCwwLTQuOTQsMi41MXYtMi4wOWgtMy42OHYxNi44OWgzLjcxdi05LjM2YzAtMi45MywxLjYzLTQuNDksNC4xMy00LjQ5czMuNjgsMS41OSwzLjY4LDQuNDV2OS40aDMuNzF2LTkuMzZjMC0yLjkzLDEuNy00LjQ5LDQuMTMtNC40OXMzLjcxLDEuNTksMy43MSw0LjQ1djkuNFptNTQuOTEtMTYuODloLTZ2LTUuMTJoLTMuNzF2NS4xMmgtMy40M3YzLjM2aDMuNDN2Ny43YzAsMy45MiwxLjUyLDYuMjYsNS44Nyw2LjI2YTguNjUsOC42NSwwLDAsMCw0LjU5LTEuMzFsLTEuMDYtMy4xNWE2Ljc3LDYuNzcsMCwwLDEtMy4yNSwxYy0xLjg0LDAtMi40NC0xLjEzLTIuNDQtMi44M3YtNy42M2g2Wm0zMS4zMy0uNDJhNSw1LDAsMCwwLTQuNDUsMi40N3YtMkgzMjAuOHYxNi44OWgzLjY4di05LjQ3YzAtMi43OSwxLjItNC4zNCwzLjYtNC4zNGE2LDYsMCwwLDEsMi4zLjQybDEuMTMtMy40NmE3Ljc5LDcuNzksMCwwLDAtMi42Mi0uNDZabS00Ny4zNywxLjc3YTEyLjYyLDEyLjYyLDAsMCwwLTYuODktMS43N2MtNC4yOCwwLTcsMi03LDUuNDEsMCwyLjc1LDIsNC40NSw1LjgzLDVsMS43My4yNWMyLC4yOCwzLC44MSwzLDEuNzYsMCwxLjMxLTEuMzQsMi4wNS0zLjg1LDIuMDVhOC45Myw4LjkzLDAsMCwxLTUuNjEtMS43N2wtMS43NCwyLjg3YTEyLjI0LDEyLjI0LDAsMCwwLDcuMzIsMi4xOWM0Ljg3LDAsNy43LTIuMyw3LjctNS41MiwwLTMtMi4yMy00LjUyLTUuOS01LjA1bC0xLjczLS4yNGMtMS41OS0uMjItMi44Ni0uNTMtMi44Ni0xLjY2czEuMi0yLDMuMjEtMmExMC44NywxMC44NywwLDAsMSw1LjI3LDEuNDVaTTM4MCwxMjMuNzdhNSw1LDAsMCwwLTQuNDUsMi40N3YtMmgtMy42NHYxNi44OWgzLjY3di05LjQ3YzAtMi43OSwxLjItNC4zNCwzLjYtNC4zNGE1Ljk0LDUuOTQsMCwwLDEsMi4zLjQybDEuMTMtMy40NmE3Ljc3LDcuNzcsMCwwLDAtMi42MS0uNDZabS00Ny4zNSw4Ljg3YzAsNS4xMiwzLjU3LDguODcsOSw4Ljg3YTguODUsOC44NSwwLDAsMCw2LjA4LTJsLTEuNzctM2E3LjM4LDcuMzgsMCwwLDEtNC40MSwxLjUyLDUuNDEsNS40MSwwLDAsMSwwLTEwLjgxLDcuMzgsNy4zOCwwLDAsMSw0LjQxLDEuNTJsMS43Ny0zYTguODksOC44OSwwLDAsMC02LjA4LTJjLTUuNDQsMC05LDMuNzUtOSw4Ljg3Wm0zNC40Miwwdi04LjQ1aC0zLjY4djJhNi4zOSw2LjM5LDAsMCwwLTUuMzMtMi40N2MtNC43NCwwLTguNDUsMy43MS04LjQ1LDguODdzMy43MSw4Ljg3LDguNDUsOC44N2E2LjQsNi40LDAsMCwwLDUuMzMtMi40OHYyLjA1SDM2N1ptLTEzLjY4LDBhNS4wNyw1LjA3LDAsMCwxLDUuMTMtNS40MWMzLDAsNS4wOCwyLjMzLDUuMDgsNS40MWE1LjExLDUuMTEsMCwxLDEtMTAuMjEsMFpNMzA5LDEyMy43N2MtNC45NCwwLTguNDEsMy42LTguNDEsOC44N3MzLjYxLDguODcsOC42Niw4Ljg3YTEwLjI5LDEwLjI5LDAsMCwwLDYuOTMtMi4zN2wtMS44MS0yLjcyYTgsOCwwLDAsMS00LjkxLDEuNzcsNC43LDQuNywwLDAsMS01LTQuMTRIMzE3YzAtLjQ2LjA3LS45Mi4wNy0xLjQxLDAtNS4yNy0zLjI4LTguODctOC04Ljg3Wm0tLjA3LDMuMjljMi4zNywwLDMuODksMS40OCw0LjI4LDQuMDloLTguNzZjLjM4LTIuNDMsMS44Ny00LjA5LDQuNDgtNC4wOVptOTIuMTgsNS41OFYxMTcuNDFoLTMuNjd2OC44M2E2LjQyLDYuNDIsMCwwLDAtNS4zNC0yLjQ3Yy00LjczLDAtOC40NCwzLjcxLTguNDQsOC44N3MzLjcxLDguODcsOC40NCw4Ljg3YTYuNDMsNi40MywwLDAsMCw1LjM0LTIuNDh2Mi4wNWgzLjY3Wm00LjI5LDYuODhhMSwxLDAsMCwxLC40My4wOSwxLDEsMCwwLDEsLjM1LjIzLDEuMzYsMS4zNiwwLDAsMSwuMjMuMzQsMSwxLDAsMCwxLC4wOS40MiwxLDEsMCwwLDEtLjA5LjQxLDEuMzYsMS4zNiwwLDAsMS0uMjMuMzQsMSwxLDAsMCwxLS4zNS4yMywxLDEsMCwwLDEtLjQzLjA5LDEuMDcsMS4wNywwLDAsMS0uNDMtLjA5LDEsMSwwLDAsMS0uMzUtLjIzLDEuMzYsMS4zNiwwLDAsMS0uMjMtLjM0LDEuMTUsMS4xNSwwLDAsMS0uMDgtLjQxLDEuMTYsMS4xNiwwLDAsMSwuMDgtLjQyLDEuMzYsMS4zNiwwLDAsMSwuMjMtLjM0LDEsMSwwLDAsMSwuMzUtLjIzQTEuMDcsMS4wNywwLDAsMSw0MDUuNCwxMzkuNTJabTAsMS45MWEuODguODgsMCwwLDAsLjMzLS4wNiwxLDEsMCwwLDAsLjI2LS4xOC44LjgsMCwwLDAsLjE4LS4yNy44Ny44NywwLDAsMCwuMDYtLjMyLjg4Ljg4LDAsMCwwLS4wNi0uMzNBLjguOCwwLDAsMCw0MDYsMTQwYS43OC43OCwwLDAsMC0uMjYtLjE3LjcyLjcyLDAsMCwwLS4zMy0uMDcuNzEuNzEsMCwwLDAtLjMyLjA3LjczLjczLDAsMCwwLS4yNy4xNy44LjgsMCwwLDAtLjE4LjI3Ljg4Ljg4LDAsMCwwLS4wNi4zMy44Ny44NywwLDAsMCwuMDYuMzIuOC44LDAsMCwwLC4xOC4yNy45MS45MSwwLDAsMCwuMjcuMThBLjg3Ljg3LDAsMCwwLDQwNS40LDE0MS40M1ptLjA3LTEuMzRhLjQyLjQyLDAsMCwxLC4yOS4wOS4yOC4yOCwwLDAsMSwuMTEuMjMuMjkuMjksMCwwLDEtLjA5LjIxLjM3LjM3LDAsMCwxLS4yMy4wOWwuMzMuMzhoLS4yNmwtLjMtLjM3aC0uMXYuMzdINDA1di0xWm0tLjI1LjE5di4yN2guMjVhLjE4LjE4LDAsMCwwLC4xMywwLC4xMS4xMSwwLDAsMCwwLS4xLjE0LjE0LDAsMCwwLDAtLjEuMjUuMjUsMCwwLDAtLjEzLDBabS0xNy43OC03LjY0YzAtMywxLjk0LTUuNDEsNS4xMi01LjQxczUuMDksMi4zMyw1LjA5LDUuNDFhNS4wNiw1LjA2LDAsMCwxLTUuMDksNS40Yy0zLjE4LDAtNS4xMi0yLjQzLTUuMTItNS40Wm0tMTI0LjA4LDB2LTguNDVoLTMuNjh2MmE2LjM5LDYuMzksMCwwLDAtNS4zMy0yLjQ3Yy00Ljc0LDAtOC40NSwzLjcxLTguNDUsOC44N3MzLjcxLDguODcsOC40NSw4Ljg3YTYuNCw2LjQsMCwwLDAsNS4zMy0yLjQ4djIuMDVoMy42OFptLTEzLjY4LDBhNS4wNyw1LjA3LDAsMCwxLDUuMTMtNS40MWMzLDAsNS4wOCwyLjMzLDUuMDgsNS40MWE1LjExLDUuMTEsMCwxLDEtMTAuMjEsMFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNy41OSAtMTMuNTkpIi8+PHJlY3QgY2xhc3M9ImNscy02IiB4PSIxMjAuMjkiIHk9IjgxLjk4IiB3aWR0aD0iMjg3LjI4IiBoZWlnaHQ9IjY1Ljk1Ii8+PC9zdmc+
+    arguments:
+      - name: api_key
+        display_name: API Key
+        type: string
+      - name: ek_identity_context
+        display_name: Identity Source
+        type: context
+        context: IdentityContext
+        default: ACCOUNT
+    mode: Merge
+    validation: |
+      return true;
+    template:
+      - call_url:
+          url: "https://api.ekata.com/1.1/account_opening?api_key={{api_key}}"
+          method: POST
+          request:
+            header_rules:
+              - inject:
+                  content: "application/x-www-form-urlencoded"
+                  mode: OverwriteOrInsertContent
+                name: Content-Type
+            multipart_body_rules:
+              - inject:
+                  from_attribute: journey_id
+                  mode: OverwriteOrInsertContent
+                name: account_signup_id
+              - inject:
+                  template: "{{ timestamp | strftime('%Y-%m-%d %H:%M:%S') }}"
+                  mode: OverwriteOrInsertContent
+                name: account_signup_time
+              - inject:
+                  template: "{{ identity['{{ek_identity_context}}'].name.first }} {{ identity['{{ek_identity_context}}'].name.last }}"
+                  mode: OverwriteOrInsertContent
+                name: name
+              - inject:
+                  from_attribute: identity['{{ek_identity_context}}'].email['PERSONAL'].email
+                  mode: OverwriteOrInsertContent
+                name: email_address
+              - inject:
+                  from_attribute: identity['{{ek_identity_context}}'].telephone['HOME'].national_number
+                  mode: OverwriteOrInsertContent
+                name: phone
+              - inject:
+                  from_attribute: identity['{{ek_identity_context}}'].telephone['HOME'].geo
+                  mode: OverwriteOrInsertContent
+                name: phone.country_hint
+              - inject:
+                  from_attribute: profiling.tcp_connection['PRIMARY'].ip_address
+                  mode: OverwriteOrInsertContent
+                name: ip_address
+              - inject:
+                  from_attribute: identity['{{ek_identity_context}}'].address['HOME'].street1
+                  mode: OverwriteOrInsertContent
+                name: address.street_line_1
+              - inject:
+                  from_attribute: identity['{{ek_identity_context}}'].address['HOME'].street2
+                  mode: OverwriteOrInsertContent
+                name: address.street_line_2
+              - inject:
+                  from_attribute: identity['{{ek_identity_context}}'].address['HOME'].city
+                  mode: OverwriteOrInsertContent
+                name: address.city
+              - inject:
+                  from_attribute: identity['{{ek_identity_context}}'].address['HOME'].zip_post_code
+                  mode: OverwriteOrInsertContent
+                name: address.postal_code
+              - inject:
+                  from_attribute: identity['{{ek_identity_context}}'].address['HOME'].state
+                  mode: OverwriteOrInsertContent
+                name: address.state_code
+              - inject:
+                  from_attribute: identity['{{ek_identity_context}}'].address['HOME'].country
+                  mode: OverwriteOrInsertContent
+                name: address.country_code
+          response:
+            body_rule:
+              jsonpath:
+                - extract_to_attribute: integrations.ekata.account_opening.email.valid
+                  name: $['email.valid']
+                - extract_to_attribute: integrations.ekata.account_opening.email.first_seen_days
+                  name: $['email.first_seen_days']     
+                - extract_to_attribute: integrations.ekata.account_opening.email.domain_creation_date
+                  name: $['email.domain_creation_date']
+                - extract_to_attribute: integrations.ekata.account_opening.email.to_name
+                  name: $['email.to_name']
+                - extract_to_attribute: integrations.ekata.account_opening.ip.risk
+                  name: $['ip.risk']
+                - extract_to_attribute: integrations.ekata.account_opening.ip.risk_score
+                  name: $['ip.risk_score']
+                - extract_to_attribute: integrations.ekata.account_opening.ip.last_seen_days
+                  name: $['ip.last_seen_days']
+                - extract_to_attribute: integrations.ekata.account_opening.ip.geolocation_country_code
+                  name: $['ip.geolocation_country_code']
+                - extract_to_attribute: integrations.ekata.account_opening.ip.geolocation_subdivision
+                  name: $['ip.geolocation_subdivision']
+                - extract_to_attribute: integrations.ekata.account_opening.ip.phone_distance
+                  name: $['ip.phone_distance']
+                - extract_to_attribute: integrations.ekata.account_opening.ip.address_distance
+                  name: $['ip.address_distance']
+                - extract_to_attribute: integrations.ekata.account_opening.phone.valid
+                  name: $['phone.valid']
+                - extract_to_attribute: integrations.ekata.account_opening.phone.line_type
+                  name: $['phone.line_type']
+                - extract_to_attribute: integrations.ekata.account_opening.phone.carrier
+                  name: $['phone.carrier']
+                - extract_to_attribute: integrations.ekata.account_opening.phone.country_code
+                  name: $['phone.country_code']
+                - extract_to_attribute: integrations.ekata.account_opening.phone.last_seen_days
+                  name: $['phone.last_seen_days']
+                - extract_to_attribute: integrations.ekata.account_opening.phone.email.first_seen_days
+                  name: $['phone.email.first_seen_days']
+                - extract_to_attribute: integrations.ekata.account_opening.phone.to_name
+                  name: $['phone.to_name']
+                - extract_to_attribute: integrations.ekata.account_opening.phone.to_address
+                  name: $['phone.to_address']
+                - extract_to_attribute: integrations.ekata.account_opening.address.validity_level
+                  name: $['address.validity_level']
+                - extract_to_attribute: integrations.ekata.account_opening.address.to_name
+                  name: $['address.to_name']
+                - extract_to_attribute: integrations.ekata.account_opening.identity_network_score
+                  name: $['identity_network_score']
+                - extract_to_attribute: integrations.ekata.account_opening.identity_risk_score
+                  name: $['identity_risk_score']
+                - extract_to_attribute: integrations.ekata.account_opening.warnings
+                  name: $['warnings'][*]
+  - name: ekata_trapi
+    display_name: "Ekata Transaction Risk API v2.1"
+    scope: model/operation
+    icon: 
+      type: svg+xml
+      href: PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDcuNTcgMTQ3LjkzIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzQwMzg5Mzt9LmNscy0ye2ZpbGw6I2YyNjUyMjt9LmNscy0ze2ZpbGw6I2U1MWIyNDt9LmNscy00e2ZpbGw6IzIzMWYyMDt9LmNscy01e2ZpbGw6I2Y5OWYxYzt9LmNscy02e2ZpbGw6bm9uZTt9PC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTcuNTksMTcuMzhhMi4yNCwyLjI0LDAsMCwxLDIuMjUtMi4yNEg3OS4yYTIuMjUsMi4yNSwwLDAsMSwyLjI1LDIuMjRWMzEuNzZBMi4yNSwyLjI1LDAsMCwxLDc5LjIsMzRINDAuNTVhMi4yNiwyLjI2LDAsMCwwLTIuMjUsMi4yNlY3MS40NmEyLjI0LDIuMjQsMCwwLDAsMi4yMiwyLjJINzkuMTdhMi4yNSwyLjI1LDAsMCwxLDIuMjUsMi4yNVY5MC4yM2EyLjI1LDIuMjUsMCwwLDEtMi4yNSwyLjI1SDE5Ljg0YTIuMjUsMi4yNSwwLDAsMS0yLjI1LTIuMjVaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTcuNTkgLTEzLjU5KSIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTIyMC44Myw1Ny45MmEyMS43NiwyMS43NiwwLDAsMS00Mi42NCwwSDE1OS42NkE0MCw0MCwwLDAsMCwyMTkuMSw4OC41N3YxLjY4YTIuMjYsMi4yNiwwLDAsMCwyLjI1LDIuMjRoMTUuMjhhMi4yNCwyLjI0LDAsMCwwLDIuMTgtMi4yVjU3LjkyWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE3LjU5IC0xMy41OSkiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xNzguMSw0OS42N2EyMS43NiwyMS43NiwwLDAsMSw0Mi43NiwwaDE3Ljk1VjE3LjQ0YTIuMjYsMi4yNiwwLDAsMC0yLjI0LTIuMjZIMjIxLjM1YTIuMjYsMi4yNiwwLDAsMC0yLjI1LDIuMjZ2MS4zM2E0MCw0MCwwLDAsMC01OS40NiwzMC45WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE3LjU5IC0xMy41OSkiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xMzQsNTcuOTJIOTVWOTAuMjNhMi4yNSwyLjI1LDAsMCwwLDIuMjUsMi4yNUgxMTMuN0EyLjI1LDIuMjUsMCwwLDAsMTE2LDkwLjIzVjY4LjQ1YzAtMS4yNC42Ny0xLjQ5LDEuNDgtLjU2bDIwLDIyLjlhNS43NCw1Ljc0LDAsMCwwLDMuNzIsMS42OWgyMWMxLjI0LDAsMS41OS0uNzYuNzYtMS42OVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNy41OSAtMTMuNTkpIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTMzLjg4LDQ5LjY3bDI3Ljc3LTMyLjgyYy44LTEsLjQ0LTEuNzEtLjc5LTEuNzFIMTQwLjM5YTUuNDcsNS40NywwLDAsMC0zLjY3LDEuNzJMMTE3LjM5LDQwYy0uNzgsMS0xLjQ0LjcyLTEuNDQtLjUyVjE3LjM4YTIuMjUsMi4yNSwwLDAsMC0yLjI1LTIuMjRIOTcuMjdBMi4yNCwyLjI0LDAsMCwwLDk1LDE3LjM4VjQ5LjY3WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE3LjU5IC0xMy41OSkiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik00Ny4yNyw0Nkg3MC4xOUEyLjkzLDIuOTMsMCwwLDEsNzMuMTIsNDl2OS42NmEyLjkzLDIuOTMsMCwwLDEtMi45MywyLjkzSDQ3LjI3YTIuOTQsMi45NCwwLDAsMS0yLjk0LTIuOTNWNDlBMi45NCwyLjk0LDAsMCwxLDQ3LjI3LDQ2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTcuNTkgLTEzLjU5KSIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTM2MS40Niw0NS4wOWE4LjcyLDguNzIsMCwxLDEtOC43Miw4LjcyLDguNzIsOC43MiwwLDAsMSw4LjcyLTguNzIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNy41OSAtMTMuNTkpIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMjczLjI0LDU3LjkyVjkwLjIzYTIuMjUsMi4yNSwwLDAsMCwyLjI1LDIuMjVoMTcuMzJhMi4yNiwyLjI2LDAsMCwwLDIuMjYtMi4yNVY1Ny45MloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNy41OSAtMTMuNTkpIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMjUxLjQ5LDM0LjA2SDI3MWEyLjI0LDIuMjQsMCwwLDEsMi4yNCwyLjIzVjQ5LjY3aDIxLjg0VjM2LjM1YTIuMjUsMi4yNSwwLDAsMSwyLjI1LTIuMjRIMzE2LjhhMi4yNSwyLjI1LDAsMCwwLDIuMjUtMi4yNVYxNy40MmEyLjI1LDIuMjUsMCwwLDAtMi4yNS0yLjI1SDI1MS41YTIuMjUsMi4yNSwwLDAsMC0yLjI1LDIuMjVWMzEuOGEyLjI2LDIuMjYsMCwwLDAsMi4yNCwyLjI2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTcuNTkgLTEzLjU5KSIvPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTM5OC43MywxNS4xOEgzODMuNDVhMi4yNSwyLjI1LDAsMCwwLTIuMjUsMi4yNlYxOC45YTQwLDQwLDAsMCwwLTU5LjU3LDMwLjc3SDM0MC4xYTIxLjc1LDIxLjc1LDAsMSwxLDAsOC4yM0gzMjEuNjRBNDAsNDAsMCwwLDAsMzgxLjIsODguNTV2MS43M2EyLjI0LDIuMjQsMCwwLDAsMi4yNSwyLjI0aDE1LjI4QTIuMjYsMi4yNiwwLDAsMCw0MDEsOTAuMjhWMTcuNDRhMi4yNiwyLjI2LDAsMCwwLTIuMjYtMi4yNiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE3LjU5IC0xMy41OSkiLz48cmVjdCBjbGFzcz0iY2xzLTIiIHg9IjEyOS4xOCIgeT0iOTguOTgiIHdpZHRoPSIyMi4yMiIgaGVpZ2h0PSIzOS45MyIvPjxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTE0OC4xOCwxMzIuNTNhMjUuMzUsMjUuMzUsMCwwLDEsOS43LTIwLDI1LjQsMjUuNCwwLDEsMCwwLDM5LjkzQTI1LjMzLDI1LjMzLDAsMCwxLDE0OC4xOCwxMzIuNTNaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTcuNTkgLTEzLjU5KSIvPjxwYXRoIGNsYXNzPSJjbHMtNCIgZD0iTTE5Ni41NCwxNDguMjZ2LS44MWguMzN2LS4xN0gxOTZ2LjE3aC4zM3YuODFabTEuNjMsMHYtMWgtLjI1bC0uMy42OC0uMy0uNjhoLS4yNXYxaC4xOHYtLjc0bC4yOC42NGguMThsLjI4LS42NHYuNzRaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTcuNTkgLTEzLjU5KSIvPjxwYXRoIGNsYXNzPSJjbHMtNSIgZD0iTTE5OSwxMzIuNTNhMjUuNCwyNS40LDAsMCwxLTQxLjA5LDIwLDI1LjQsMjUuNCwwLDAsMCwwLTM5LjkzLDI1LjQsMjUuNCwwLDAsMSw0MS4wOSwyMFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNy41OSAtMTMuNTkpIi8+PHBhdGggZD0iTTI0Mi42NSwxNDEuMDh2LTEwLjZhNi4yOSw2LjI5LDAsMCwwLTYuNjQtNi43MSw2LjU4LDYuNTgsMCwwLDAtNS45NCwzLDYuMTksNi4xOSwwLDAsMC01LjU4LTMsNS41Nyw1LjU3LDAsMCwwLTQuOTQsMi41MXYtMi4wOWgtMy42OHYxNi44OWgzLjcxdi05LjM2YzAtMi45MywxLjYzLTQuNDksNC4xMy00LjQ5czMuNjgsMS41OSwzLjY4LDQuNDV2OS40aDMuNzF2LTkuMzZjMC0yLjkzLDEuNy00LjQ5LDQuMTMtNC40OXMzLjcxLDEuNTksMy43MSw0LjQ1djkuNFptNTQuOTEtMTYuODloLTZ2LTUuMTJoLTMuNzF2NS4xMmgtMy40M3YzLjM2aDMuNDN2Ny43YzAsMy45MiwxLjUyLDYuMjYsNS44Nyw2LjI2YTguNjUsOC42NSwwLDAsMCw0LjU5LTEuMzFsLTEuMDYtMy4xNWE2Ljc3LDYuNzcsMCwwLDEtMy4yNSwxYy0xLjg0LDAtMi40NC0xLjEzLTIuNDQtMi44M3YtNy42M2g2Wm0zMS4zMy0uNDJhNSw1LDAsMCwwLTQuNDUsMi40N3YtMkgzMjAuOHYxNi44OWgzLjY4di05LjQ3YzAtMi43OSwxLjItNC4zNCwzLjYtNC4zNGE2LDYsMCwwLDEsMi4zLjQybDEuMTMtMy40NmE3Ljc5LDcuNzksMCwwLDAtMi42Mi0uNDZabS00Ny4zNywxLjc3YTEyLjYyLDEyLjYyLDAsMCwwLTYuODktMS43N2MtNC4yOCwwLTcsMi03LDUuNDEsMCwyLjc1LDIsNC40NSw1LjgzLDVsMS43My4yNWMyLC4yOCwzLC44MSwzLDEuNzYsMCwxLjMxLTEuMzQsMi4wNS0zLjg1LDIuMDVhOC45Myw4LjkzLDAsMCwxLTUuNjEtMS43N2wtMS43NCwyLjg3YTEyLjI0LDEyLjI0LDAsMCwwLDcuMzIsMi4xOWM0Ljg3LDAsNy43LTIuMyw3LjctNS41MiwwLTMtMi4yMy00LjUyLTUuOS01LjA1bC0xLjczLS4yNGMtMS41OS0uMjItMi44Ni0uNTMtMi44Ni0xLjY2czEuMi0yLDMuMjEtMmExMC44NywxMC44NywwLDAsMSw1LjI3LDEuNDVaTTM4MCwxMjMuNzdhNSw1LDAsMCwwLTQuNDUsMi40N3YtMmgtMy42NHYxNi44OWgzLjY3di05LjQ3YzAtMi43OSwxLjItNC4zNCwzLjYtNC4zNGE1Ljk0LDUuOTQsMCwwLDEsMi4zLjQybDEuMTMtMy40NmE3Ljc3LDcuNzcsMCwwLDAtMi42MS0uNDZabS00Ny4zNSw4Ljg3YzAsNS4xMiwzLjU3LDguODcsOSw4Ljg3YTguODUsOC44NSwwLDAsMCw2LjA4LTJsLTEuNzctM2E3LjM4LDcuMzgsMCwwLDEtNC40MSwxLjUyLDUuNDEsNS40MSwwLDAsMSwwLTEwLjgxLDcuMzgsNy4zOCwwLDAsMSw0LjQxLDEuNTJsMS43Ny0zYTguODksOC44OSwwLDAsMC02LjA4LTJjLTUuNDQsMC05LDMuNzUtOSw4Ljg3Wm0zNC40Miwwdi04LjQ1aC0zLjY4djJhNi4zOSw2LjM5LDAsMCwwLTUuMzMtMi40N2MtNC43NCwwLTguNDUsMy43MS04LjQ1LDguODdzMy43MSw4Ljg3LDguNDUsOC44N2E2LjQsNi40LDAsMCwwLDUuMzMtMi40OHYyLjA1SDM2N1ptLTEzLjY4LDBhNS4wNyw1LjA3LDAsMCwxLDUuMTMtNS40MWMzLDAsNS4wOCwyLjMzLDUuMDgsNS40MWE1LjExLDUuMTEsMCwxLDEtMTAuMjEsMFpNMzA5LDEyMy43N2MtNC45NCwwLTguNDEsMy42LTguNDEsOC44N3MzLjYxLDguODcsOC42Niw4Ljg3YTEwLjI5LDEwLjI5LDAsMCwwLDYuOTMtMi4zN2wtMS44MS0yLjcyYTgsOCwwLDAsMS00LjkxLDEuNzcsNC43LDQuNywwLDAsMS01LTQuMTRIMzE3YzAtLjQ2LjA3LS45Mi4wNy0xLjQxLDAtNS4yNy0zLjI4LTguODctOC04Ljg3Wm0tLjA3LDMuMjljMi4zNywwLDMuODksMS40OCw0LjI4LDQuMDloLTguNzZjLjM4LTIuNDMsMS44Ny00LjA5LDQuNDgtNC4wOVptOTIuMTgsNS41OFYxMTcuNDFoLTMuNjd2OC44M2E2LjQyLDYuNDIsMCwwLDAtNS4zNC0yLjQ3Yy00LjczLDAtOC40NCwzLjcxLTguNDQsOC44N3MzLjcxLDguODcsOC40NCw4Ljg3YTYuNDMsNi40MywwLDAsMCw1LjM0LTIuNDh2Mi4wNWgzLjY3Wm00LjI5LDYuODhhMSwxLDAsMCwxLC40My4wOSwxLDEsMCwwLDEsLjM1LjIzLDEuMzYsMS4zNiwwLDAsMSwuMjMuMzQsMSwxLDAsMCwxLC4wOS40MiwxLDEsMCwwLDEtLjA5LjQxLDEuMzYsMS4zNiwwLDAsMS0uMjMuMzQsMSwxLDAsMCwxLS4zNS4yMywxLDEsMCwwLDEtLjQzLjA5LDEuMDcsMS4wNywwLDAsMS0uNDMtLjA5LDEsMSwwLDAsMS0uMzUtLjIzLDEuMzYsMS4zNiwwLDAsMS0uMjMtLjM0LDEuMTUsMS4xNSwwLDAsMS0uMDgtLjQxLDEuMTYsMS4xNiwwLDAsMSwuMDgtLjQyLDEuMzYsMS4zNiwwLDAsMSwuMjMtLjM0LDEsMSwwLDAsMSwuMzUtLjIzQTEuMDcsMS4wNywwLDAsMSw0MDUuNCwxMzkuNTJabTAsMS45MWEuODguODgsMCwwLDAsLjMzLS4wNiwxLDEsMCwwLDAsLjI2LS4xOC44LjgsMCwwLDAsLjE4LS4yNy44Ny44NywwLDAsMCwuMDYtLjMyLjg4Ljg4LDAsMCwwLS4wNi0uMzNBLjguOCwwLDAsMCw0MDYsMTQwYS43OC43OCwwLDAsMC0uMjYtLjE3LjcyLjcyLDAsMCwwLS4zMy0uMDcuNzEuNzEsMCwwLDAtLjMyLjA3LjczLjczLDAsMCwwLS4yNy4xNy44LjgsMCwwLDAtLjE4LjI3Ljg4Ljg4LDAsMCwwLS4wNi4zMy44Ny44NywwLDAsMCwuMDYuMzIuOC44LDAsMCwwLC4xOC4yNy45MS45MSwwLDAsMCwuMjcuMThBLjg3Ljg3LDAsMCwwLDQwNS40LDE0MS40M1ptLjA3LTEuMzRhLjQyLjQyLDAsMCwxLC4yOS4wOS4yOC4yOCwwLDAsMSwuMTEuMjMuMjkuMjksMCwwLDEtLjA5LjIxLjM3LjM3LDAsMCwxLS4yMy4wOWwuMzMuMzhoLS4yNmwtLjMtLjM3aC0uMXYuMzdINDA1di0xWm0tLjI1LjE5di4yN2guMjVhLjE4LjE4LDAsMCwwLC4xMywwLC4xMS4xMSwwLDAsMCwwLS4xLjE0LjE0LDAsMCwwLDAtLjEuMjUuMjUsMCwwLDAtLjEzLDBabS0xNy43OC03LjY0YzAtMywxLjk0LTUuNDEsNS4xMi01LjQxczUuMDksMi4zMyw1LjA5LDUuNDFhNS4wNiw1LjA2LDAsMCwxLTUuMDksNS40Yy0zLjE4LDAtNS4xMi0yLjQzLTUuMTItNS40Wm0tMTI0LjA4LDB2LTguNDVoLTMuNjh2MmE2LjM5LDYuMzksMCwwLDAtNS4zMy0yLjQ3Yy00Ljc0LDAtOC40NSwzLjcxLTguNDUsOC44N3MzLjcxLDguODcsOC40NSw4Ljg3YTYuNCw2LjQsMCwwLDAsNS4zMy0yLjQ4djIuMDVoMy42OFptLTEzLjY4LDBhNS4wNyw1LjA3LDAsMCwxLDUuMTMtNS40MWMzLDAsNS4wOCwyLjMzLDUuMDgsNS40MWE1LjExLDUuMTEsMCwxLDEtMTAuMjEsMFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNy41OSAtMTMuNTkpIi8+PHJlY3QgY2xhc3M9ImNscy02IiB4PSIxMjAuMjkiIHk9IjgxLjk4IiB3aWR0aD0iMjg3LjI4IiBoZWlnaHQ9IjY1Ljk1Ii8+PC9zdmc+
+    arguments:
+      - name: api_key
+        display_name: API Key
+        type: string
+      - name: primary_context
+        display_name: Primary Identity Source
+        type: context
+        context: IdentityContext
+        default: ACCOUNT
+      - name: secondary_context
+        display_name: Secondary Identity Source
+        type: context
+        context: IdentityContext
+        default: SHIPPING
+    mode: Merge
+    validation: |
+      return true;
+    template:
+      - call_url:
+          url: "https://api.ekata.com/2.1/transaction_risk?api_key={{api_key}}"
+          method: POST
+          request:
+            header_rules:
+              - inject:
+                  content: "application/x-www-form-urlencoded"
+                  mode: OverwriteOrInsertContent
+                name: Content-Type
+            multipart_body_rules:
+              - inject:
+                  from_attribute: identifier
+                  mode: OverwriteOrInsertContent
+                name: transaction_id
+              - inject:
+                  template: "{{ timestamp | strftime('%Y-%m-%d %H:%M:%S') }}"
+                  mode: OverwriteOrInsertContent
+                name: transaction_time
+              - inject:
+                  from_attribute: profiling.tcp_connection['PRIMARY'].ip_address
+                  mode: OverwriteOrInsertContent
+                name: ip_address
+              - inject:
+                  template: "{{ identity['{{primary_context}}'].name.first }} {{ identity['{{primary_context}}'].name.last }}"
+                  mode: OverwriteOrInsertContent
+                name: primary.name
+              - inject:
+                  from_attribute: identity['{{primary_context}}'].email['PERSONAL'].email
+                  mode: OverwriteOrInsertContent
+                name: primary.email_address
+              - inject:
+                  from_attribute: identity['{{primary_context}}'].telephone['HOME'].national_number
+                  mode: OverwriteOrInsertContent
+                name: primary.phone
+              - inject:
+                  from_attribute: identity['{{primary_context}}'].telephone['HOME'].geo
+                  mode: OverwriteOrInsertContent
+                name: primary.phone.country_hint
+              - inject:
+                  from_attribute: identity['{{primary_context}}'].address['HOME'].street1
+                  mode: OverwriteOrInsertContent
+                name: primary.address.street_line_1
+              - inject:
+                  from_attribute: identity['{{primary_context}}'].address['HOME'].street2
+                  mode: OverwriteOrInsertContent
+                name: primary.address.street_line_2
+              - inject:
+                  from_attribute: identity['{{primary_context}}'].address['HOME'].city
+                  mode: OverwriteOrInsertContent
+                name: primary.address.city
+              - inject:
+                  from_attribute: identity['{{primary_context}}'].address['HOME'].zip_post_code
+                  mode: OverwriteOrInsertContent
+                name: primary.address.postal_code
+              - inject:
+                  from_attribute: identity['{{primary_context}}'].address['HOME'].state
+                  mode: OverwriteOrInsertContent
+                name: primary.address.state_code
+              - inject:
+                  from_attribute: identity['{{primary_context}}'].address['HOME'].country
+                  mode: OverwriteOrInsertContent
+                name: primary.address.country_code
+              - inject:
+                  template: "{{ identity['{{secondary_context}}'].name.first }} {{ identity['{{secondary_context}}'].name.last }}"
+                  mode: OverwriteOrInsertContent
+                name: secondary.name
+              - inject:
+                  from_attribute: identity['{{secondary_context}}'].email['PERSONAL'].email
+                  mode: OverwriteOrInsertContent
+                name: secondary.email_address
+              - inject:
+                  from_attribute: identity['{{secondary_context}}'].telephone['HOME'].national_number
+                  mode: OverwriteOrInsertContent
+                name: secondary.phone
+              - inject:
+                  from_attribute: identity['{{secondary_context}}'].telephone['HOME'].geo
+                  mode: OverwriteOrInsertContent
+                name: secondary.phone.country_hint
+              - inject:
+                  from_attribute: identity['{{secondary_context}}'].address['HOME'].street1
+                  mode: OverwriteOrInsertContent
+                name: secondary.address.street_line_1
+              - inject:
+                  from_attribute: identity['{{secondary_context}}'].address['HOME'].street2
+                  mode: OverwriteOrInsertContent
+                name: secondary.address.street_line_2
+              - inject:
+                  from_attribute: identity['{{secondary_context}}'].address['HOME'].city
+                  mode: OverwriteOrInsertContent
+                name: secondary.address.city
+              - inject:
+                  from_attribute: identity['{{secondary_context}}'].address['HOME'].zip_post_code
+                  mode: OverwriteOrInsertContent
+                name: secondary.address.postal_code
+              - inject:
+                  from_attribute: identity['{{secondary_context}}'].address['HOME'].state
+                  mode: OverwriteOrInsertContent
+                name: secondary.address.state_code
+              - inject:
+                  from_attribute: identity['{{secondary_context}}'].address['HOME'].country
+                  mode: OverwriteOrInsertContent
+                name: secondary.address.country_code
+          response:
+            body_rule:
+              jsonpath:
+                - extract_to_attribute: integrations.ekata.transaction.primary.email.valid
+                  name: $['primary.email.valid']
+                - extract_to_attribute: integrations.ekata.transaction.primary.email.first_seen_days
+                  name: $['primary.email.first_seen_days']
+                - extract_to_attribute: integrations.ekata.transaction.primary.email.to_name
+                  name: $['primary.email.to_name']
+                - extract_to_attribute: integrations.ekata.transaction.primary.email.domain_creation_date
+                  name: $['primary.email.domain_creation_date']
+                - extract_to_attribute: integrations.ekata.transaction.primary.email.last_seen_days
+                  name: $['primary.email.last_seen_days']
+                - extract_to_attribute: integrations.ekata.transaction.primary.phone.valid
+                  name: $['primary.phone.valid']
+                - extract_to_attribute: integrations.ekata.transaction.primary.phone.line_type
+                  name: $['primary.phone.line_type']
+                - extract_to_attribute: integrations.ekata.transaction.primary.phone.ip.last_seen_days
+                  name: $['primary.phone.ip.last_seen_days']
+                - extract_to_attribute: integrations.ekata.transaction.primary.phone.to_name
+                  name: $['primary.phone.to_name']
+                - extract_to_attribute: integrations.ekata.transaction.primary.phone.carrier
+                  name: $['primary.phone.carrier']
+                - extract_to_attribute: integrations.ekata.transaction.primary.address.validity_level
+                  name: $['primary.address.validity_level']
+                - extract_to_attribute: integrations.ekata.transaction.primary.address.first_seen_days
+                  name: $['primary.address.first_seen_days']
+                - extract_to_attribute: integrations.ekata.transaction.primary.address.to_name
+                  name: $['primary.address.to_name']
+                - extract_to_attribute: integrations.ekata.transaction.secondary.email.valid
+                  name: $['secondary.email.valid']
+                - extract_to_attribute: integrations.ekata.transaction.secondary.email.first_seen_days
+                  name: $['secondary.email.first_seen_days']
+                - extract_to_attribute: integrations.ekata.transaction.secondary.email.to_name
+                  name: $['secondary.email.to_name']
+                - extract_to_attribute: integrations.ekata.transaction.secondary.email.domain_creation_date
+                  name: $['secondary.email.domain_creation_date']
+                - extract_to_attribute: integrations.ekata.transaction.secondary.email.last_seen_days
+                  name: $['secondary.email.last_seen_days']
+                - extract_to_attribute: integrations.ekata.transaction.secondary.phone.valid
+                  name: $['secondary.phone.valid']
+                - extract_to_attribute: integrations.ekata.transaction.secondary.phone.line_type
+                  name: $['secondary.phone.line_type']
+                - extract_to_attribute: integrations.ekata.transaction.secondary.phone.ip.last_seen_days
+                  name: $['secondary.phone.ip.last_seen_days']
+                - extract_to_attribute: integrations.ekata.transaction.secondary.phone.to_name
+                  name: $['secondary.phone.to_name']
+                - extract_to_attribute: integrations.ekata.transaction.secondary.phone.carrier
+                  name: $['secondary.phone.carrier']
+                - extract_to_attribute: integrations.ekata.transaction.secondary.address.validity_level
+                  name: $['secondary.address.validity_level']
+                - extract_to_attribute: integrations.ekata.transaction.secondary.address.first_seen_days
+                  name: $['secondary.address.first_seen_days']
+                - extract_to_attribute: integrations.ekata.transaction.secondary.address.to_name
+                  name: $['secondary.address.to_name']
+                - extract_to_attribute: integrations.ekata.transaction.ip.risk_score
+                  name: $['ip.risk_score']
+                - extract_to_attribute: integrations.ekata.transaction.ip.primary_address_distance
+                  name: $['ip.primary_address_distance']
+                - extract_to_attribute: integrations.ekata.transaction.ip.secondary_address_distance
+                  name: $['ip.secondary_address_distance']
+                - extract_to_attribute: integrations.ekata.transaction.ip.last_seen_days
+                  name: $['ip.last_seen_days']
+                - extract_to_attribute: integrations.ekata.transaction.ip.geolocation_country_code
+                  name: $['ip.geolocation_country_code']
+                - extract_to_attribute: integrations.ekata.transaction.ip.connection_type
+                  name: $['ip.connection_type']
+                - extract_to_attribute: integrations.ekata.transaction.identity_network_score
+                  name: $['identity_network_score']
+                - extract_to_attribute: integrations.ekata.transaction.identity_risk_score
+                  name: $['identity_risk_score']
+                - extract_to_attribute: integrations.ekata.transaction.alerts
+                  name: $['alerts'][*]
+                - extract_to_attribute: integrations.ekata.transaction.warnings
+                  name: $['warnings'][*]
+                - extract_to_attribute: integrations.ekata.transaction.errors
+                  name: $['errors']

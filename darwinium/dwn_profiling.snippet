@@ -1,0 +1,215 @@
+api_version: darwinium.com/api/snippet/v1
+snippets:
+
+  - name: inject_dwn_profiling
+    display_name: Inject darwinium profiling
+    scope: html/operation
+    arguments:
+        #for now, name could be one of [ fp, mouse, sensor, touch, key ]
+      - name: key_bm
+        display_name: Enable keyboard biometrics
+        #type can be 'xpath' | 'string' | 'attribute' | 'context' | 'bool'
+        #we will add more of these as we move forward
+        type: boolean
+        default: true
+      - name: mouse_bm
+        display_name: Enable mouse biometrics
+        type: boolean
+        default: true
+      - name: touch_bm
+        display_name: Enable touch biometrics
+        type: boolean
+        default: true
+      - name: sensor_bm
+        display_name: Enable sensor biometrics
+        type: boolean
+        default: true
+      - name: geo_location
+        display_name: Enable geolocation
+        type: boolean
+        default: false
+        documentation: |
+          Denotes whether profiling will attempt to profile details on the device geo. This has an effect in some browsers where permissions may be asked whether the user accepts providing geolocation
+      - name: device_sensor
+        display_name: Enable device_sensor(mainly for iOS)
+        type: boolean
+        default: false
+      - name: profiling_with_ajax
+        display_name: Profiling with ajax
+        type: boolean
+        default: false
+        documentation: |
+          Use this parameter when a single page application is used where you cannot bind a listener to a form
+      - name: profiling_with_fetch
+        display_name: Profiling with fetch
+        type: boolean
+        default: false
+        documentation: |
+          Use this parameter to send profiling information with subsequent fetch requests after the profiling has been injected
+    mode: Merge
+    validation: |
+      if(item !== undefined && item.name !== undefined){
+        return item.name == "/html/body";
+      }
+      return false;
+    template:
+      - name: "{{name}}"
+        inject:
+          ## append the JS at the end of body
+          mode: AfterContent
+          template_from_file: src/fpjs/dwn_profiling.js
+          template_parameters:
+            - key: key_bm
+              value: "{{key_bm}}"
+              data_type: Bool
+            - key: mouse_bm
+              value: "{{mouse_bm}}"
+              data_type: Bool
+            - key: touch_bm
+              value: "{{touch_bm}}"
+              data_type: Bool
+            - key: sensor_bm
+              value: "{{sensor_bm}}"
+              data_type: Bool
+            - key: dwn_fp_ajax
+              value: "{{profiling_with_ajax}}"
+              data_type: Bool
+            - key: dwn_fp_fetch
+              value: "{{profiling_with_fetch}}"
+              data_type: Bool
+            - key: geo_location_enabled
+              value: "{{geo_location}}"
+              data_type: Bool
+            - key: device_sensor_enabled
+              value: "{{device_sensor}}"
+              data_type: Bool
+    
+  - name: dwn_name
+    display_name: Bind Input/TextArea Value to Profiling request
+    scope: html/operation
+    arguments:
+      - name: dwn_name
+        display_name: Darwinium Attribute Name
+        type: string
+    mode: Merge
+    validation: |
+      if(item !== undefined && item.name !== undefined){
+        let itemXpathTokens = item.name.split('/');
+        let lastItem = itemXpathTokens[itemXpathTokens.length-1];
+        return lastItem.indexOf('input') > -1 || lastItem.indexOf('textarea') > -1;
+      }
+      return false;
+    template:
+      - name: "{{name}}/@dwn_name"
+        inject:
+          mode: OverwriteOrInsertContent
+          content: "{{dwn_name}}"
+      - name: "{{name}}/@onfocus"
+        inject:
+          content: dwn_ns.field_focus(this, '{{key_bm_attrib}}')
+          mode: OverwriteOrInsertContent
+    
+  - name: key_bm_map
+    display_name: Map Input to Biometrics Attribute
+    scope: html/operation
+    arguments:
+      - name: key_bm_attrib
+        display_name: Biometrics Context
+        type: context
+        context: BiometricsContext
+    mode: Merge
+    validation: |
+      if(item !== undefined && item.name !== undefined){
+        let itemXpathTokens = item.name.split('/');
+        let lastItem = itemXpathTokens[itemXpathTokens.length-1];
+        return lastItem.indexOf('input') > -1 || lastItem.indexOf('textarea') > -1;
+      }
+      return false;
+    template:
+      - name: "{{name}}/@onfocus"
+        inject:
+          content: dwn_ns.field_focus(this, '{{key_bm_attrib}}')
+          mode: OverwriteOrInsertContent
+
+  - name: dwn_submit
+    display_name: Send Profiling data to URL on event
+    scope: html/operation
+    arguments:
+      - name: profiling_url
+        display_name: Profiling url
+        type: string
+        default: "/dwn/profiling"
+      - name: trigger_event
+        display_name: Trigger Event
+        type: list
+        options:
+          - click
+          - focus
+        default: "click"
+      - name: request_type
+        display_name: Request Type
+        type: list
+        options:
+          - fetch
+          - ajax
+        default: "fetch"
+    mode: Merge
+    validation: |
+      if(item !== undefined && item.name !== undefined){
+        return (item.name.indexOf('submit') > -1 || item.name.indexOf('button') > -1);
+      }
+      return false;
+    # the template to apply, relative to "item"
+    template:
+      - name: "{{name}}/@dwn_submit"
+        inject:
+          mode: OverwriteOrInsertContent
+          content: "{{profiling_url}},{{trigger_event}},{{request_type}}"
+    
+  - name: log_enable
+    display_name: Enable Log for certain module
+    scope: html/operation
+    arguments:
+      # current value [main, key_bm, mouse_bm, sensor_bm, touch_bm, crypto, webrtc, other]
+      - name: log_for
+        display_name: Log for which module
+        #type can be 'xpath' | 'string' | 'attribute' | 'context'
+        #we will add more of these as we move forward
+        type: list
+        options:
+          - main
+          - key_bm
+          - mouse_bm
+          - sensor_bm
+          - touch_bm
+          - crypto
+          - webrtc
+          - other
+        default: "main"
+    mode: Merge
+    validation: |
+      if(item !== undefined && item.name !== undefined){
+        return item.name === "/html/body";
+      }
+      return false;
+    template:
+      - name: "{{name}}"
+        inject:
+          mode: BeforeContent
+          content: <script> var dwn_ns = dwn_ns || {}; dwn_ns['enable_log_{{log_for}}'] = true;</script>
+    
+  - name: set_no_cache_header
+    display_name: Set no_cache for the request
+    scope: header/operation
+    mode: Merge
+    validation: |
+      if(item !== undefined && item.name !== undefined && item.name === "Cache-Control") {
+        return true;
+      }
+      return false;
+    template:
+      - name: Cache-Control
+        inject:
+          content: no-cache, no-store
+          mode: OverwriteOrInsertContent
+    

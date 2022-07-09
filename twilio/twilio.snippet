@@ -1,0 +1,83 @@
+api_version: darwinium.com/api/snippet/v1
+snippets:
+  - name: twilio_sms
+    display_name: "Twilio SMS Message"
+    scope: model/operation
+    icon: 
+      type: svg+xml
+      href: PHN2ZyBmaWxsPSIjRjIyRjQ2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMzAiPjxwYXRoIGQ9Ik0xNC40IDExLjNjMCAxLjctMS40IDMuMS0zLjEgMy4xUzguMiAxMyA4LjIgMTEuM3MxLjQtMy4xIDMuMS0zLjEgMy4xIDEuNCAzLjEgMy4xem0tMy4xIDQuM2MtMS43IDAtMy4xIDEuNC0zLjEgMy4xczEuNCAzLjEgMy4xIDMuMSAzLjEtMS40IDMuMS0zLjEtMS40LTMuMS0zLjEtMy4xek0zMCAxNWMwIDguMy02LjcgMTUtMTUgMTVTMCAyMy4zIDAgMTUgNi43IDAgMTUgMHMxNSA2LjcgMTUgMTV6bS00IDBjMC02LjEtNC45LTExLTExLTExUzQgOC45IDQgMTVzNC45IDExIDExIDExIDExLTQuOSAxMS0xMXptLTcuMy42Yy0xLjcgMC0zLjEgMS40LTMuMSAzLjFzMS40IDMuMSAzLjEgMy4xIDMuMS0xLjQgMy4xLTMuMS0xLjQtMy4xLTMuMS0zLjF6bTAtNy40Yy0xLjcgMC0zLjEgMS40LTMuMSAzLjFzMS40IDMuMSAzLjEgMy4xIDMuMS0xLjQgMy4xLTMuMS0xLjQtMy4xLTMuMS0zLjF6bTUxLjYtMi4zYy4xIDAgLjIuMS4zLjJ2My4yYzAgLjItLjIuMy0uMy4zSDY1Yy0uMiAwLS4zLS4yLS4zLS4zVjYuMmMwLS4yLjItLjMuMy0uM2g1LjN6bS0uMSA0LjVINjBjLS4xIDAtLjMuMS0uMy4zbC0xLjMgNS0uMS4zLTEuNi01LjNjMC0uMS0uMi0uMy0uMy0uM2gtNGMtLjEgMC0uMy4xLS4zLjNsLTEuNSA1LS4xLjMtLjEtLjMtLjYtMi41LS42LTIuNWMwLS4xLS4yLS4zLS4zLS4zaC04VjYuMWMwLS4xLS4yLS4zLS40LS4ybC01IDEuNmMtLjIgMC0uMy4xLS4zLjN2Mi43aC0xLjNjLS4xIDAtLjMuMS0uMy4zdjMuOGMwIC4xLjEuMy4zLjNoMS4zdjQuN2MwIDMuMyAxLjggNC44IDUuMSA0LjggMS40IDAgMi43LS4zIDMuNi0uOHYtNGMwLS4yLS4yLS4zLS4zLS4yLS41LjItMSAuMy0xLjQuMy0uOSAwLTEuNC0uNC0xLjQtMS40di0zLjRoMi45Yy4xIDAgLjMtLjEuMy0uM3YtMy4yTDQ3LjggMjRjMCAuMS4yLjMuMy4zaDQuMmMuMSAwIC4zLS4xLjMtLjNsMS44LTUuNi45IDIuOS44IDIuN2MwIC4xLjIuMy4zLjNoNC4yYy4xIDAgLjMtLjEuMy0uM2wzLjgtMTIuNlYyNGMwIC4xLjEuMy4zLjNoNS4xYy4xIDAgLjMtLjEuMy0uM1YxMC43YzAtLjEtLjEtLjMtLjItLjN6bTYuNy00LjVoLTUuMWMtLjEgMC0uMy4xLS4zLjN2MTcuN2MwIC4xLjEuMy4zLjNoNS4xYy4xIDAgLjMtLjEuMy0uM1Y2LjFjMC0uMS0uMS0uMi0uMy0uMnptNi44IDBoLTUuM2MtLjEgMC0uMy4xLS4zLjN2My4xYzAgLjEuMS4zLjMuM2g1LjNjLjEgMCAuMy0uMS4zLS4zVjYuMWMwLS4xLS4xLS4yLS4zLS4yem0tLjEgNC41aC01LjFjLS4xIDAtLjMuMS0uMy4zdjEzLjFjMCAuMS4xLjMuMy4zaDUuMWMuMSAwIC4zLS4xLjMtLjNWMTAuN2MwLS4xLS4xLS4zLS4zLS4zem0xNi4xIDYuOGMwIDMuOC0zLjIgNy4xLTcuNyA3LjEtNC40IDAtNy42LTMuMy03LjYtNy4xczMuMi03LjEgNy43LTcuMWM0LjQgMCA3LjYgMy4zIDcuNiA3LjF6bS01LjQuMWMwLTEuNC0xLTIuNS0yLjItMi40LTEuMyAwLTIuMiAxLjEtMi4yIDIuNHMxIDIuNCAyLjIgMi40YzEuMyAwIDIuMi0xLjEgMi4yLTIuNHoiLz48L3N2Zz4K
+    arguments:
+      - name: account_sid
+        display_name: "Account SID"
+        type: string
+      - name: auth_token
+        display_name: "Auth Token"
+        type: string
+      - name: from_phone
+        display_name: "Twilio Phone Number (From)"
+        type: string
+      - name: dest_phone
+        display_name: Destination Phone Number
+        type: list
+        options:
+          - "identity['ACCOUNT'].telephone['MOBILE'].e164_number"
+          - "identity['ACCOUNT'].telephone['WORK'].e164_number"
+          - "identity['ACCOUNT'].telephone['HOME'].e164_number"
+          - "identity['SHIPPING'].telephone['MOBILE'].e164_number"
+          - "identity['SHIPPING'].telephone['WORK'].e164_number"
+          - "identity['SHIPPING'].telephone['HOME'].e164_number"
+          - "identity['BILLING'].telephone['MOBILE'].e164_number"
+          - "identity['BILLING'].telephone['WORK'].e164_number"
+          - "identity['BILLING'].telephone['HOME'].e164_number"
+          - "identity['ORIGINATOR'].telephone['MOBILE'].e164_number"
+          - "identity['ORIGINATOR'].telephone['WORK'].e164_number"
+          - "identity['ORIGINATOR'].telephone['HOME'].e164_number"
+          - "identity['BENIFICIARY'].telephone['MOBILE'].e164_number"
+          - "identity['BENIFICIARY'].telephone['WORK'].e164_number"
+          - "identity['BENIFICIARY'].telephone['HOME'].e164_number"
+        default: "identity['ACCOUNT'].telephone['MOBILE'].e164_number"
+      - name: message_body
+        display_name: "Message Body Template"
+        type: string
+    mode: Merge
+    validation: |
+      return true;
+    template:
+      - call_url:
+          url: "https://api.twilio.com/2010-04-01/Accounts/{{account_sid}}/Messages.json"
+          method: POST
+          request:
+            header_rules:
+              - inject:
+                  content: "application/x-www-form-urlencoded"
+                  mode: OverwriteOrInsertContent
+                name: Content-Type
+              - inject:
+                  template: "Basic {{ '{{account_sid}}:{{auth_token}}' | b64encode }}"
+                  mode: OverwriteOrInsertContent
+                name: Authorization
+            multipart_body_rules:
+              - inject:
+                  template: "{{message_body}}"
+                  mode: OverwriteOrInsertContent
+                name: Body
+              - inject:
+                  template: "{{from_phone}}"
+                  mode: OverwriteOrInsertContent
+                name: From
+              - inject:
+                  from_attribute: "{{dest_phone}}"
+                  mode: OverwriteOrInsertContent
+                name: To
+          response:
+            body_rule:
+              jsonpath:
+                - extract_to_attribute: integrations.twilio.sms.error_code
+                  name: $['error_code']
+                - extract_to_attribute: integrations.twilio.sms.error_message
+                  name: $['error_message']
+                - extract_to_attribute: integrations.twilio.sms.status
+                  name: $['status']
+
+
+

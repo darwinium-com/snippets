@@ -2,12 +2,27 @@ snippet_repo:
   - display_name: Darwinium profiling and biometrics
     version: 1.0
     files:
-      - src: darwinium_profiling/dwn_profiling.js
-        dest: src/dwn_profiling.js
-      - src: darwinium_profiling/dwn_profiling.snippet
+      - src: darwinium/dwn_profiling.js
+        dest: src/fpjs/dwn_profiling.js
+      - src: darwinium/dwn_profiling.snippet
         dest: dwn_profiling.snippet
   - display_name: Ekata integration
     version: 0.1
     files: 
-      - src: ekata_snippet/ekata.snippet
-        dest: src/ekata.snippet
+      - src: ekata/ekata.snippet
+        dest: ekata.snippet
+  - display_name: Jira - Create Issue
+    version: 0.1
+    files: 
+      - src: jira/jira.snippet
+        dest: jira.snippet
+  - display_name: Google Recapcha
+    version: 0.1
+    files:
+      - src: recapcha/recapcha.snippet
+        dest: recapcha.snippet
+  - display_name: Twilio - Send SMS
+    version: 0.1
+    files:
+      - src: twilio/twilio.snippet
+        dest: twilio.snippet

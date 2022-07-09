@@ -1,0 +1,13 @@
+snippet_repo:
+  - display_name: Darwinium profiling and biometrics
+    version: 1.0
+    files:
+      - src: darwinium_profiling/dwn_profiling.js
+        dest: src/dwn_profiling.js
+      - src: darwinium_profiling/dwn_profiling.snippet
+        dest: dwn_profiling.snippet
+  - display_name: Ekata integration
+    version: 0.1
+    files: 
+      - src: ekata_snippet/ekata.snippet
+        dest: src/ekata.snippet
